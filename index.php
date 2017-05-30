@@ -12,8 +12,16 @@
 
 	$_smarty->compile_dir = ROOT_PATH . '/templates_c';		// 编译目录
 
+	$_smarty->cache_dir = ROOT_PATH . '/cache/';			// 缓存目录
+
 	$_smarty->caching = false;								// 是否开启缓存
 
-	$a = 'sss';
-	$_smarty->assign('name', $a);
-	$_smarty->display('index.tpl');		
+	$_smarty->left_delimiter = '{';							// 左定界符
+
+	$_smarty->right_delimiter = '}';						// 又定界符
+
+
+
+	//$a = 'sss';
+	//$_smarty->assign('name', $a);
+	//$_smarty->display('index.tpl');		
