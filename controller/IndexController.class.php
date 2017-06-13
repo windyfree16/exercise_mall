@@ -1,11 +1,10 @@
 <?php
 
-class IndexController {
-	private $_tpl;
+class IndexController extends Controller{
 
-	public function __construct($_tpl)
+	public function __construct()
 	{
-		$this->_tpl = $_tpl;
+		parent::__construct();
 	}
 
 	// 初始页
@@ -15,5 +14,10 @@ class IndexController {
 		$this->_tpl->assign('name', '你好');
 		$this->_tpl->display(SMARTY_STYLE . 'index.tpl');
 	}
+
+	public function add()
+    {
+        echo 'add方法';
+    }
 
 }

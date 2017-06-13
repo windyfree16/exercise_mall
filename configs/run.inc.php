@@ -32,9 +32,9 @@ spl_autoload_register(function ($_className) {
 		require_once ROOT_PATH . '/public/' . $_className . '.class.php';
 	}
 
-	throw new Exception($_className . '类，不存在！');
+	//throw new Exception($_className . '类，不存在！');
 
 });
 
-$_tpl = Tpl::getInstance();
+Factory::setController()->run();
 
