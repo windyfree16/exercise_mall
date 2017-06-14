@@ -17,7 +17,7 @@ class IndexController extends Controller{
 
 	public function add()
     {
-        echo 'add方法';
+        $model = new UserModel();
     }
 
 }
